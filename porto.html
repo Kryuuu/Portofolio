@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .card i {
+            font-size: 2rem;
+            color: #333;
+        }
+        .portfolio-content {
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .item img, .item iframe {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">PORTOFOLIO</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="porto.html">Portofolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio-content">
+                <div class="item">
+                    <iframe src="https://www.youtube.com/embed/EoCjTpfH5OE" allowfullscreen></iframe>
+                </div>
+                <div class="item">
+                    <iframe src="https://www.youtube.com/embed/uMnd1VPMlRg" allowfullscreen></iframe>
+                </div>
+                <div class="item">
+                    <iframe src="https://www.youtube.com/embed/QgYJRQTTHsHZzrVq" allowfullscreen></iframe>
+                </div>
+                <div class="item">
+                    <a href="ABC/RawFx.mp4">
+                        <img src="ABC/Screenshot 2024-08-06 130743.png" alt="Video Editing">
+                    </a>                    
+            </div>
+        </section>
+    </main>
+    <footer class="text-center mt-4">
+        <p>&copy; ENVY._ | 2024</p>
+    </footer>
+</body>
+</html>
